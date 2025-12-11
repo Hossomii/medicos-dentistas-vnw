@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
 import Home from './pages/home/Home'
 import './globalStyle.scss'
 import Voluntario from './pages/voluntario/Voluntario'
@@ -10,10 +11,13 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
+
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/voluntario" element={<Voluntario/>}/>
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </>
   )

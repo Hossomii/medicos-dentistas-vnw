@@ -1,10 +1,17 @@
+/* PADRÕES DE ESTILOS */
+
 @mixin btnVerde {
   background-color: #00745A;
   color: white;
   padding: 16px 22px;
   border-radius: 12px;
   font-size: 1.375rem;
+  transition: background-color 0.2s ease;
   cursor: pointer;
+
+  &:hover {
+    background-color: darken($color: #00745A, $amount: 10);
+  }
 }
 @mixin btnComoAjudar {
   background-color: transparent;
@@ -14,29 +21,38 @@
   border-radius: 12px;
   font-weight: 500;
   font-size: 1.375rem;
+  transition: background-color 0.2s ease;
   cursor: pointer;
+
+  &:hover {
+    background-color: #00745A;
+    color: white;
+  }
 }
 
-main {
+// * {
+//   outline: 1px solid red;
+// }
+
+/* ===== SEÇÃO BANNER INICIAL ===== */
+
+.mainBannerContainer {
   display: flex;
-  padding: 1rem 0 6.25rem 0;
+  padding: 1rem 6rem 6.25rem 6rem;
   
-  section {
-    margin-left: 6rem;
-    width: 100%;
+  .mainSection {
     display: flex;
     flex-direction: row;
   }
   
   article {
-    margin-right: 6rem;
-    img {
-      width: 600px;
+      img {
+        max-width: 600px;
     }
   }
 }
 
-.mainContainer {
+.mainDiv {
   width: 50%;
 }
 
@@ -54,6 +70,8 @@ main {
   }
 
 .btnContainer {
+  display: flex;
+  flex-wrap: wrap;
   margin: 15px 0;
   padding: 40px 0;
   .btnVerde {
@@ -82,6 +100,60 @@ main {
     cursor: pointer;
     img {
       width: 32px;
+    }
+  }
+}
+
+/* ===== SEÇÃO CARDS VERDE ===== */
+
+.cardsSection {
+  background-color: #00745A;
+
+
+  .cardsDiv{
+    padding: 5rem 6rem 5rem 6rem;
+
+    .cardsTituloSection {
+      color: white;
+      font-size: 3.75rem;
+      margin-bottom: 1.875rem;
+    }
+    .cardsDescricaoSection {
+      color: white;
+      font-size: 1.4rem;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* ===== SEÇÃO CARDS BRANCA ===== */
+
+.cardsSection2 {
+  background-color: #ffffff;
+
+
+  .cardsDiv2{
+    padding: 5rem 6rem 5rem 6rem;
+
+    .cardsTituloSection2 {
+      color: black;
+      font-size: 3.75rem;
+      margin-bottom: 1.875rem;
+    }
+    .cardsDescricaoSection2 {
+      color: black;
+      font-size: 1.4rem;
+    }
+
+    .cards2 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 }
