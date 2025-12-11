@@ -13,10 +13,10 @@ const Main = () => {
         <section className={s.mainSection}> 
           <div className={s.mainDiv}> 
             <div className={s.SaudeTodosContainer}>
-              <Link className={s.btnSaudeTodos}>
+              <div className={s.btnSaudeTodos}>
                 <img src={iconeSaude} alt="Icone dentista" />
                 <p>Saúde para todos</p>
-              </Link>
+              </div>
             </div>
             <div className={s.texts}>
               <h1>Saúde e cuidado sem barreiras</h1>
@@ -27,10 +27,10 @@ const Main = () => {
               <Link to='/voluntario' className={s.btnComoAjudar}>Como Ajudar</Link>
             </div>
           </div>
+            <article>
+              <img src={imgMedico} alt="Imagem de um médico sorrindo" />
+            </article>
         </section>
-        <article>
-          <img src={imgMedico} alt="Imagem de um médico sorrindo" />
-        </article>
       </div>
 
       <section className={s.cardsSection}>

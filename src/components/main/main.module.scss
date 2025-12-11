@@ -37,26 +37,30 @@
 /* ===== SEÇÃO BANNER INICIAL ===== */
 
 .mainBannerContainer {
-  display: flex;
-  padding: 1rem 6rem 6.25rem 6rem;
   
   .mainSection {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   
   article {
+    width: 50%;
+    padding: 0 8rem 2rem 2rem;
       img {
-        max-width: 600px;
+        width: 700px;
     }
   }
 }
 
 .mainDiv {
   width: 50%;
+  padding: 2rem 0 2rem 8rem;
 }
 
 .texts {
+  width: 70%;
     h1 {
       font-size: 4rem;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -72,7 +76,7 @@
 .btnContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 15px 0;
+  margin: 15px 0 60px 0;
   padding: 40px 0;
   .btnVerde {
     @include btnVerde();
@@ -97,9 +101,14 @@
     font-size: 1.25rem;
     font-weight: 500;
     gap: 12px;
+    transition: background-color 0.2s ease;
     cursor: pointer;
     img {
       width: 32px;
+    }
+
+    &:hover {
+      background-color: rgb(172, 172, 172);
     }
   }
 }
@@ -111,7 +120,7 @@
 
 
   .cardsDiv{
-    padding: 5rem 6rem 5rem 6rem;
+    padding: 5rem 8rem 5rem 8rem;
 
     .cardsTituloSection {
       color: white;
@@ -138,7 +147,7 @@
 
 
   .cardsDiv2{
-    padding: 5rem 6rem 5rem 6rem;
+    padding: 5rem 8rem 5rem 8rem;
 
     .cardsTituloSection2 {
       color: black;
@@ -156,4 +165,391 @@
       flex-wrap: wrap;
     }
   }
+}
+
+/* ==== DESKTOP TELAS GRANDES ==== */
+/* ==== DESKTOP TELAS GRANDES ==== */
+/* ==== DESKTOP TELAS GRANDES ==== */
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+
+  /* ===== SEÇÃO BANNER ===== */
+
+  .mainBannerContainer {
+    .mainSection {
+      padding: 3rem 4rem;
+      gap: 2rem;
+    }
+
+    article {
+      width: 50%;
+      padding: 0 4rem 2rem 2rem;
+
+      img {
+        width: 600px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .mainDiv {
+    width: 50%;
+    padding: 2rem 4rem;
+  }
+
+  .texts {
+    width: 90%;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 34px;
+    }
+  }
+
+  .btnContainer {
+    padding: 30px 0;
+    gap: 20px;
+
+    .btnVerde,
+    .btnComoAjudar {
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      padding: 18px 32px;
+      font-size: 1.3rem;
+    }
+  }
+
+  .SaudeTodosContainer .btnSaudeTodos {
+    font-size: 1.2rem;
+    padding: 14px 25px;
+  }
+
+
+  /* ===== CARDS VERDE ===== */
+
+  .cardsSection .cardsDiv {
+    padding: 4rem 6rem;
+
+    .cardsTituloSection {
+      font-size: 3.2rem;
+    }
+
+    .cardsDescricaoSection {
+      font-size: 1.3rem;
+    }
+
+    .cards {
+      gap: 2.5rem;
+    }
+  }
+
+
+  /* ===== CARDS BRANCOS ===== */
+
+  .cardsSection2 .cardsDiv2 {
+    padding: 4rem 6rem;
+
+    .cardsTituloSection2 {
+      font-size: 3.2rem;
+    }
+
+    .cardsDescricaoSection2 {
+      font-size: 1.3rem;
+    }
+
+    .cards2 {
+      gap: 2.5rem;
+    }
+  }
+}
+
+/* ==== TABLET & NOTEBOOKS ==== */
+/* ==== TABLET & NOTEBOOKS ==== */
+/* ==== TABLET & NOTEBOOKS ==== */
+
+@media (min-width: 501px) and (max-width: 1024px) {
+
+  /* ===== SEÇÃO BANNER ===== */
+
+  .mainBannerContainer {
+
+    .mainSection {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+
+    article {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        max-width: 480px;
+      }
+    }
+  }
+
+  .mainDiv {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texts {
+    width: 100%;
+    max-width: 700px;
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.25;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 30px;
+      margin-top: 25px;
+    }
+  }
+
+  .btnContainer {
+    width: 100%;
+    margin: 20px 0 40px 0;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .btnVerde,
+    .btnComoAjudar {
+      margin: 0;
+      width: 70%;        
+      max-width: 380px;
+      justify-content: center;
+    }
+  }
+
+  .SaudeTodosContainer {
+    justify-content: center;
+    
+    .btnSaudeTodos {
+      font-size: 1.1rem;
+      padding: 14px 22px;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+
+  /* ===== SEÇÃO CARDS VERDE ===== */
+
+  .cardsSection {
+
+    .cardsDiv {
+      padding: 4rem 3rem;
+
+      .cardsTituloSection {
+        font-size: 2.8rem;
+        text-align: center;
+      }
+
+      .cardsDescricaoSection {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-items: center;
+      }
+    }
+  }
+
+
+  /* ===== SEÇÃO CARDS BRANCA ===== */
+
+  .cardsSection2 {
+
+    .cardsDiv2 {
+      padding: 4rem 3rem;
+
+      .cardsTituloSection2 {
+        font-size: 2.8rem;
+        text-align: center;
+      }
+
+      .cardsDescricaoSection2 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .cards2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-items: center;
+      }
+    }
+  }
+}
+
+
+/* ==== MOBILE ==== */
+/* ==== MOBILE ==== */
+/* ==== MOBILE ==== */
+
+@media (max-width: 500px) {
+
+.mainBannerContainer {
+  
+  .mainSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  article {
+    padding: 0;
+    margin: 0;
+    img {
+      display: none;
+    }
+  }
+}
+
+.mainDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.texts {
+  width: 100%;
+  max-width: 600px; 
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 28px;
+  }
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  .btnVerde,
+  .btnComoAjudar {
+    margin: 0;
+    width: 90%;       
+    max-width: 420px; 
+    justify-content: center;
+  }
+}
+
+.SaudeTodosContainer {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 0.5rem 0;
+
+  .btnSaudeTodos {
+    padding: 12px 20px;
+    font-size: 1rem;
+
+    img {
+      width: 28px;
+    }
+  }
+}
+
+
+  /* ===== SEÇÃO CARDS VERDE ===== */
+
+  .cardsSection {
+
+    .cardsDiv {
+      padding: 3rem 1.5rem;
+
+      .cardsTituloSection {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .cardsDescricaoSection {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+  }
+
+
+  /* ===== SEÇÃO CARDS BRANCA ===== */
+
+  .cardsSection2 {
+    
+    .cardsDiv2 {
+      padding: 3rem 1.5rem;
+      
+      .cardsTituloSection2 {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      
+      .cardsDescricaoSection2 {
+        padding: 0 2rem;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .cards2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+  }
+
 }

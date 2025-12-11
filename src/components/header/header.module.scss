@@ -56,3 +56,30 @@
 .btnDefault {
   @include btnDefault()
 }
+
+@media (max-width: 500px) {
+  .header {
+    height: 70px;
+    padding: 0 16px;
+    justify-content: space-between;
+
+    div {
+      padding: 0;
+      gap: 6px;
+
+      img {
+        width: 28px;
+      }
+
+      h2 {
+        font-size: 0.9rem;
+      }
+    }
+
+    nav {
+      padding: 0;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+  }
+}
