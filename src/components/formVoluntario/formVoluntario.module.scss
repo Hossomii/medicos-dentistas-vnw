@@ -4,10 +4,11 @@
   border: 1px solid #555;
   border-radius: 10px;
 
-  &::placeholder, &::placeholder {
-  font-size: 1rem;
-  color: #999;
-  opacity: 1;
+  &::placeholder,
+  &::placeholder {
+    font-size: 1rem;
+    color: #999;
+    opacity: 1;
   }
 }
 
@@ -27,16 +28,17 @@
 }
 
 .FormTitleContainer {
-    .FormTitle {
-      font-size: 1.5rem;
-      margin-bottom: 40px;
-    }
+  .FormTitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
 }
 
 .FormVoluntarioContainer {
   background-color: #fff;
   width: 90%;
   max-width: 1300px;
+  min-height: 700px;
   margin: 0 auto;
   padding: 40px 32px;
   border-radius: 16px;
@@ -54,6 +56,7 @@
 
       .inputsLine1 {
         flex: 1;
+
         input {
           @include inputDefault();
           width: 100%;
@@ -106,5 +109,29 @@
     margin: 0 auto;
     margin-bottom: 20px;
     @include btnVerde();
+  }
+}
+
+.mensagemEnviada {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 200px 100px;
+
+  img {
+    max-width: 200px;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #000000;
+    width: 50%;
   }
 }
