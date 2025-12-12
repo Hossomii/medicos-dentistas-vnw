@@ -1,0 +1,110 @@
+@mixin inputDefault {
+  padding: 14px 30px 24px 30px;
+  background-color: #f8f8f8;
+  border: 1px solid #555;
+  border-radius: 10px;
+
+  &::placeholder, &::placeholder {
+  font-size: 1rem;
+  color: #999;
+  opacity: 1;
+  }
+}
+
+@mixin btnVerde {
+  background-color: #00745A;
+  color: white;
+  padding: 20px 38px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.375rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color: #00745A, $amount: 10);
+  }
+}
+
+.FormTitleContainer {
+    .FormTitle {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
+}
+
+.FormVoluntarioContainer {
+  background-color: #fff;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  border-radius: 16px;
+  border: 1px solid #000;
+
+  .FormVoluntario {
+    fieldset {
+      border: none;
+    }
+
+    .inputsLine1Container {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 20px;
+
+      .inputsLine1 {
+        flex: 1;
+        input {
+          @include inputDefault();
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .inputsLine2 {
+    input {
+      @include inputDefault();
+      width: 100%;
+    }
+  }
+
+  legend {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 22px 0;
+  }
+}
+
+.FormVoluntarioContainer {
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    resize: none;
+
+    &::placeholder {
+      font-size: 1rem;
+      color: #999;
+      opacity: 1;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1.25rem;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    @include btnVerde();
+  }
+}

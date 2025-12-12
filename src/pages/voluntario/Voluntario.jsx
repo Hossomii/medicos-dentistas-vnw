@@ -1,10 +1,8 @@
-import s from './voluntario.module.scss'
+import MainVoluntario from '../../components/mainVoluntario/MainVoluntario'
 
 const Voluntario = () => {
   return (
-    <main className={s.main}>
-      <h1>Página de contato</h1>
-    </main>
+    <MainVoluntario />
   )
 }
 
