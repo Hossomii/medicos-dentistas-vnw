@@ -1,5 +1,6 @@
 import { useState } from "react"
 import s from "./formVoluntario.module.scss"
+import checkIcon from "../../assets/check-mark.png"
 
 const FormVoluntario = () => {
   const [enviado, setEnviado] = useState(false);
@@ -13,7 +14,7 @@ const FormVoluntario = () => {
     <div className={s.FormVoluntarioContainer}>
       {enviado ? (
         <div className={s.mensagemEnviada}>
-            <img src="./src/assets/check-mark.png" alt="Icone de cadastro bem sucedido" />
+            <img src={checkIcon} alt="Icone de cadastro bem sucedido" />
             <p>Cadastro realizado com sucesso. Entraremos em contato para mais informações.</p>
         </div>
       ) : (
@@ -46,11 +47,10 @@ const FormVoluntario = () => {
                     required
                     placeholder="Seu Email *"
                     pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
-                    title="Digite um e-mail válido (ex: exemplo@dominio.com)"
+                    title="Digite um e-mail válido"
                     autoComplete="email"
                   />
                 </div>
-
               </div>
 
               <div className={s.inputsLine2}>
@@ -61,11 +61,10 @@ const FormVoluntario = () => {
                   required
                   placeholder="Seu telefone *"
                   pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$"
-                  title="Digite um telefone válido (ex: 11987654321 ou (11) 98765-4321)"
+                  title="Digite um telefone válido"
                   autoComplete="tel"
                 />
               </div>
-
             </fieldset>
 
             <div>

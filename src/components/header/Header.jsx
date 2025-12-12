@@ -1,11 +1,12 @@
 import s from './header.module.scss'
 import { Link } from 'react-router-dom'
+import iconCoracao from '../../assets/icon-coracao.png'
 
 const Header = () => {
   return (
     <header className={s.header}>
       <div>
-        <img src="./src/assets/icon-coracao.png" alt="Icone de coração" />
+        <img src={iconCoracao} alt="Icone de coração" />
         <h2>Médicos & Dentistas</h2>
       </div>
       <nav>
