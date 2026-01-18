@@ -39,7 +39,7 @@ O projeto não depende de backend (API) para funcionar — trabalha com componen
 2. **Entre na pasta**
    ```bash
    cd medicos-dentistas-vnw
-4. **Instale as Dependências
+4. **Instale as Dependências**
    ```bash
    npm install
 5. **Rode o Servidor de Desenvolvimento**
@@ -47,7 +47,7 @@ O projeto não depende de backend (API) para funcionar — trabalha com componen
    npm run dev
 6. **Abra o Servidor**
    ```bash
-   http://locakhost:5173
+   http://localhost:5173
    
 Você verá uma interface básica pronta para ser customizada.
 
@@ -65,7 +65,6 @@ Este projeto está sob a licença MIT — sinta-se livre para usar e adaptar.
 
 ## Estrutura do Projeto
 ```markdown
-```bash
 /
 ├─ public/                ⟶ arquivos estáticos (ícones, imagens)
 ├─ src/
