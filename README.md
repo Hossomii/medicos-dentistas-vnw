@@ -32,20 +32,6 @@ O projeto não depende de backend (API) para funcionar — trabalha com componen
 ✔ CSS modular ou pré-processado (SCSS)  
 ✔ Boas práticas de commit e organização de código
 
-## Estrutura do Projeto
-
-/
-├─ public/                ⟶ arquivos estáticos (ícones, imagens)
-├─ src/
-│   ├─ assets/            ⟶ imagens, fontes
-│   ├─ components/        ⟶ pequenos blocos UI reutilizáveis
-│   ├─ pages/             ⟶ páginas completas
-│   ├─ styles/            ⟶ arquivos SCSS / CSS globais
-│   ├─ App.jsx            ⟶ componente raiz
-│   └─ main.jsx           ⟶ ponto de entrada React
-├─ .gitignore
-├─ package.json
-└─ vite.config.js
 
 1. **Clone este repositório**
    ```bash
@@ -76,3 +62,19 @@ Você verá uma interface básica pronta para ser customizada.
 
 📝 Licença
 Este projeto está sob a licença MIT — sinta-se livre para usar e adaptar.
+
+## Estrutura do Projeto
+```markdown
+```bash
+/
+├─ public/                ⟶ arquivos estáticos (ícones, imagens)
+├─ src/
+│   ├─ assets/            ⟶ imagens, fontes
+│   ├─ components/        ⟶ pequenos blocos UI reutilizáveis
+│   ├─ pages/             ⟶ páginas completas
+│   ├─ styles/            ⟶ arquivos SCSS / CSS globais
+│   ├─ App.jsx            ⟶ componente raiz
+│   └─ main.jsx           ⟶ ponto de entrada React
+├─ .gitignore
+├─ package.json
+└─ vite.config.js
